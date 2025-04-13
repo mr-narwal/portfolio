@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nitesh Narwal - Java & AWS Developer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            overflow-x: hidden; /* Prevent horizontal scroll for video */
+        }
+        #video-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* or contain, depending on your preference */
+            z-index: -1; /* Place behind other content */
+        }
+
+        .hero-content {
+            position: relative; /* Needed for z-index to work */
+            z-index: 1; /* Ensure content is above video */
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-gray-950 via-black to-gray-950 text-gray-300 min-h-screen">
+
+    <video id="video-background" autoplay muted loop>
+        <source src="https://test-practice-v1.s3.ap-south-1.amazonaws.com/zenitsu-compressed.mp4" type="video/mp4">  Your browser does not support the video tag.
+    </video>
+
+    <div class="relative backdrop-blur-xl bg-black/30 border-b border-gray-800 py-12 hero-content">
+        <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center gap-8">
+            <div class="relative group">
+                <div class="absolute -inset-1 bg-gradient-to-r from-emerald-500 to-blue-500 rounded-full opacity-75 group-hover:opacity-100 blur-sm transition-opacity"></div>
+                <div class="relative w-48 h-48 rounded-full overflow-hidden border-2 border-gray-800">
+                    <img src="https://test-practice-v1.s3.ap-south-1.amazonaws.com/profile.png" alt="Profile" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-black/10 group-hover:bg-black/0 transition-colors"></div>
+                </div>
+            </div>
+            <div class="text-center md:text-left z-10">
+                <h1 class="text-4xl font-bold text-white mb-2">Nitesh Narwal</h1>
+                <p class="text-xl text-emerald-400 mb-4">Java Developer & AWS Associate</p>
+                <div class="flex flex-wrap gap-4 justify-center md:justify-start text-sm">
+                    <div class="flex items-center gap-2 backdrop-blur-md bg-black/20 px-3 py-1 rounded-full border border-gray-800">
+                        <i class="fas fa-map-marker-alt w-4 h-4"></i>  <span>Faridabad, Haryana</span>
+                    </div>
+                    <div class="flex items-center gap-2 backdrop-blur-md bg-black/20 px-3 py-1 rounded-full border border-gray-800">
+                        <i class="fas fa-envelope w-4 h-4"></i>  <span>Narwalnitesh14@gmail.com</span>
+                    </div>
+                </div>
+
+                 <div class="mt-4 flex justify-center md:justify-start gap-4">  <a href="mailto:Narwalnitesh@gmail.com" class="p-2 rounded-full backdrop-blur-md bg-black/20 border border-gray-800 hover:border-emerald-500/50 transition-colors">
+                        <i class="fas fa-envelope w-5 h-5 text-gray-300 hover:text-white"></i>
+                    </a>
+                    <a href="tel:+91 9319434600" class="p-2 rounded-full backdrop-blur-md bg-black/20 border border-gray-800 hover:border-emerald-500/50 transition-colors">
+                        <i class="fas fa-phone w-5 h-5 text-gray-300 hover:text-white"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/nitesh-nehrwal-b896a218b/" target="_blank" rel="noopener noreferrer" class="p-2 rounded-full backdrop-blur-md bg-black/20 border border-gray-800 hover:border-emerald-500/50 transition-colors">
+                        <i class="fab fa-linkedin-in w-5 h-5 text-gray-300 hover:text-white"></i>
+                    </a>
+                    <a href="https://www.instagram.com/mr.narwal_21/" target="_blank" rel="noopener noreferrer" class="p-2 rounded-full backdrop-blur-md bg-black/20 border border-gray-800 hover:border-emerald-500/50 transition-colors">
+                        <i class="fab fa-instagram w-5 h-5 text-gray-300 hover:text-white"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main class="max-w-6xl mx-auto px-6 py-12">
+        </main>
+    
+        <main class="max-w-6xl mx-auto px-6 py-12">
+            <div class="backdrop-blur-lg bg-black/20 rounded-xl p-8 border border-gray-800">
+              <p class="text-gray-300 leading-relaxed mb-8">
+                  Experienced Java Developer and AWS Certified Associate with a strong foundation in building scalable, cloud-native applications. Specialized in developing microservices architecture and implementing robust backend solutions.
+              </p>
+      
+              <h2 class="text-2xl font-semibold text-emerald-400 mb-4">Skills</h2>
+              <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+                  <div class="backdrop-blur-lg bg-black/20 p-6 rounded-xl border border-gray-800 hover:border-gray-700 transition-colors">
+                      <h3 class="text-xl font-semibold text-blue-400 mb-2">Languages</h3>
+                      <ul class="list-disc pl-5">
+                          <li>Java</li>
+                          <li>Python</li>
+                          <li>JavaScript</li>
+                          <li>TypeScript</li>
+                          <li>SQL</li>
+                          <li>HTML/CSS</li>
+                      </ul>
+                  </div>
+                  <div class="backdrop-blur-lg bg-black/20 p-6 rounded-xl border border-gray-800 hover:border-gray-700 transition-colors">
+                      <h3 class="text-xl font-semibold text-blue-400 mb-2">Frameworks</h3>
+                      <ul class="list-disc pl-5">
+                          <li>Spring Boot</li>
+                          <li>Spring MVC</li>
+                          <li>Hibernate</li>
+                          <li>JUnit</li>
+                          <li>React</li>
+                          <li>Node.js</li>
+                      </ul>
+                  </div>
+                  <div class="backdrop-blur-lg bg-black/20 p-6 rounded-xl border border-gray-800 hover:border-gray-700 transition-colors">
+                      <h3 class="text-xl font-semibold text-blue-400 mb-2">Cloud & DevOps</h3>
+                      <ul class="list-disc pl-5">
+                          <li>AWS</li>
+                          <li>Docker</li>
+                          <li>Jenkins</li>
+                          <li>Git</li>
+                          <li>Maven</li>
+                          <li>REST APIs</li>
+                      </ul>
+                  </div>
+              </div>
+      
+              <h2 class="text-2xl font-semibold text-emerald-400 mb-4">Projects</h2>
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="backdrop-blur-lg bg-black/20 p-6 rounded-xl border border-gray-800 hover:border-gray-700 transition-all relative group">
+                    <h3 class="text-xl text-emerald-400 font-semibold mb-3">Enterprise Microservices Platform</h3>
+                    <p class="text-gray-300 mb-4">Designed and implemented a scalable microservices architecture using Spring Boot and AWS.</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="px-2 py-1 bg-black/30 rounded text-xs text-emerald-400 border border-gray-800">Java</span>
+                        <span class="px-2 py-1 bg-black/30 rounded text-xs text-emerald-400 border border-gray-800">Spring Boot</span>
+                        <span class="px-2 py-1 bg-black/30 rounded text-xs text-emerald-400 border border-gray-800">AWS</span>
+                    </div>
+                    
+</body>
+</html>
